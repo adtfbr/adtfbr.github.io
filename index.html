@@ -17,7 +17,10 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portofolio.</a>
+        <a href="#" class="logo">Aditya Febriadi.</a>
+            <div id="theme-icon" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </div>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -43,7 +46,7 @@
         </div>
 
         <div class="home-img">
-            <img src="foto-profil.png" alt="Foto Profil Nama Anda">
+            <img src="foto-profil.png" alt="Foto Profil Aditya Febriadi">
         </div>
     </section>
 
@@ -58,7 +61,7 @@
             <p>
                 Saya memiliki minat yang kuat terhadap keamanan digital dan berkomitmen untuk terus mengembangkan pengetahuan di bidang ini. Saat ini, saya tengah fokus menjalani perkuliahan sambil memperdalam pemahaman mengenai tools keamanan seperti Kali Linux dan konsep dasar keamanan jaringan.
             </p>
-            <a href="#" class="btn">Baca Lebih Lanjut</a>
+            <a href="#projects" class="btn">Lihat Proyek Saya</a>
         </div>
     </section>
 
@@ -107,17 +110,32 @@
     <section class="projects" id="projects">
         <h2 class="heading">Proyek <span>Terbaru</span></h2>
 
-        <div class="projects-container">
-            <div class="projects-box">
-                <img src="proyek-cuansure.png" alt="Proyek CuanSure">
-                <div class="projects-layer">
-                    <h4>Aplikasi CuanSure</h4>
-                    <p>Aplikasi berbasis web untuk membantu pedagang menghitung harga jual dan mengelola keuangan usaha secara efisien.</p>
+        <div class="projects-showcase">
+            <div class="project-slide active-slide">
+                <div class="project-info">
+                    <span class="project-number">01</span>
+                    <h3>Aplikasi CuanSure</h3>
+                    <p>Aplikasi web full-stack yang dibangun untuk tugas akhir UAS, dirancang untuk membantu UMKM dalam menghitung harga pokok penjualan (HPP) dan mengelola keuangan dasar untuk memaksimalkan keuntungan.</p>
+                    <div class="tech-stack">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
                     <div class="project-links">
-                        <a href="http://3.25.226.250/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/sabrina-smrna/CuanSure-Manpro" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="http://3.25.226.250/" class="btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/sabrina-smrna/CuanSure-Manpro" class="social-media-btn" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
+                <div class="project-image-container">
+                    <img src="proyek-cuansure.png" alt="Proyek CuanSure">
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
