@@ -59,7 +59,7 @@ body {
 }
 
 .theme-toggle {
-    display: inline-flex; /* DIUBAH DI SINI */
+    display: inline-flex;
     align-items: center;
     margin-left: 2rem;
     cursor: pointer;
@@ -75,15 +75,12 @@ body {
     color: var(--main-color);
 }
 
-/* Ini adalah style yang akan aktif saat dark mode */
 body.dark-mode {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #ffffff;
-    /* Kita biarkan --main-color tetap biru, atau ganti ke cyan '#0ef' jika suka */
 }
 
-/* Penyesuaian kecil untuk elemen lain di dark mode */
 body.dark-mode .header.sticky {
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
 }
@@ -558,4 +555,118 @@ span.multiple-text {
 
 @media (max-width: 450px) {
     html { font-size: 50%; }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        font-size: 2.6rem;
+        color: var(--text-color);
+    }
+    
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--second-bg-color);
+        border-top: .1rem solid rgba(0,0,0,.1);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        display: none;
+    }
+    
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .home {
+        flex-direction: column;
+        padding-top: 8rem;
+        min-height: auto;
+    }
+
+    .home-content h3 { font-size: 2.6rem; }
+    .home-content h1 { font-size: 5rem; }
+    
+    .home-img img {
+        width: 70vw;
+        max-width: 280px;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img img {
+        width: 70vw;
+        max-width: 280px;
+        margin-top: 4rem;
+    }
+
+    .projects .heading {
+        margin-bottom: 5rem;
+    }
+
+    .project-slide {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project-number {
+        position: static;
+        font-size: 8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-info h3 {
+        font-size: 3rem;
+    }
+
+    .project-image-container img {
+        width: 100%;
+    }
+
+    .carousel-controls {
+        position: static;
+        transform: none;
+        width: auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .carousel-controls button {
+        position: static;
+        transform: none;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
